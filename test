@@ -1,0 +1,26 @@
+[
+   {
+   "id": 1,
+   "Movie": "Thor: Ragnarok",
+   "Date": "25 October 2017",
+   "Genre": "Action"
+   },
+   {
+   "id": 2,
+   "Movie": "Star Wars: The Force Awakens",
+   "Date": "18 December 2015",
+   "Genre": "Action"
+   },
+   {
+   "id": 3,
+   "Movie": "Batman v Superman: Dawn of Justice",
+   "Date":"25 March 2016",
+   "Genre": "Action"
+   },
+   {
+   "id": 4,
+   "Movie": "Spider-Man: Homecoming",
+   "Date": "7 July 2017",
+   "Genre": "Action"
+   }
+]
