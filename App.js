@@ -7,7 +7,7 @@ import AlbumList from './src/components/AlbumList';
 //THIS IS CALLED FUNCTIONAL COMPONENTS
 const App = () => {
   return (
-    <View style={{ flex: 1}}>
+    <View style={{ flex: 1, backgroundColor: '#0C508B'}}>
       <Header title={'ALBUMS'} />
         <AlbumList />
     </View>
