@@ -2,14 +2,14 @@ import React from 'react';
 import { View } from 'react-native';
 
 const CardSection = (props) => {
-   const { cardSectionStyle} = styles;
+   const { cardSectionStyle } = styles;
 
    return (
       <View style={cardSectionStyle}>
          {props.children}
       </View>
    );
-}
+};
 
 const styles = {
    cardSectionStyle: {
@@ -21,6 +21,6 @@ const styles = {
       borderColor: '#0C508B',
       position: 'relative'
    }
-}
+};
 
 export default CardSection;

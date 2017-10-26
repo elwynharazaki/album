@@ -1,37 +1,63 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Linking, Text, View } from 'react-native';
 
 import Card from './Card';
-import CardSection from './CardSection'
+import CardSection from './CardSection';
+import Button from './Button';
+
 
 const AlbumDetail = (props) => {
+   const {
+      headerContentStyle,
+      titleTextStyle,
+      artisTextStyle
+   } = styles;
+   
+   const {
+      artist,
+      image,
+      title,
+      thumbnail_image,
+      url
+   } = props.album;
+
+   const onButtonPressed = () => {
+      Linking.openURL(url);
+   };
+
    return (
       <View>
          <Card>
             <CardSection>
                <View>
                   <Image
-                  style={{ width: 50, height: 50}}
-                  source={{ uri: props.album.thumbnail_image}}
+                  style={{ width: 50, height: 50 }}
+                  source={{ uri: thumbnail_image }}
                   />
                </View>               
 
-               <View style={styles.headerContentStyle}>
-                  <Text style={styles.titleTextStyle}>{props.album.title}</Text>
-                  <Text style={styles.artisTextStyle}>{props.album.artist}</Text>
+               <View style={headerContentStyle}>
+                  <Text style={titleTextStyle}>{title}</Text>
+                  <Text style={artisTextStyle}>{artist}</Text>
                </View>
             </CardSection>
 
             <CardSection>
                <Image
-                  style={{ height: 300, width: '100%' }}
-                  source={{ uri: props.album.image }}
+                  style={{ height: 300, flex: 1 }}
+                  source={{ uri: image }}
                />
+            </CardSection>
+            
+            <CardSection>
+               <Button buttonPressed={onButtonPressed}>
+                  Buy {title} Here
+               </Button>
             </CardSection>
          </Card>
       </View>
    );
-}
+};
 
 const styles = {
    titleTextStyle: {
@@ -51,7 +77,6 @@ const styles = {
       flexDirection: 'column',
       paddingLeft: 10
    }
-
 };
 
 export default AlbumDetail;
