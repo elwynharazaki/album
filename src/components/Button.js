@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const CustomButton = (props) => {
+const Button = (props) => {
    const { buttonStyle, textStyle } = styles;
 
    return (
@@ -21,14 +21,15 @@ const styles = {
       paddingTop: 10,
       paddingBottom: 10
    },
+   
    buttonStyle: {
-      alignSelf: 'stretch',
       alignItems: 'center',
-      flex: 1,
+      alignSelf: 'stretch',
       color: '#6D96B9',
+      flex: 1,
       fontSize: 15,
       padding: 2
    }
 };
 
-export default CustomButton;
+export default Button;

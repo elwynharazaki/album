@@ -11,9 +11,9 @@ class AlbumList extends Component {
       console.log('Will Mount');
 
       axios.get('http://59ed5606ff7d5d00128e085a.mockapi.io/api/albums')
-      .then((response) => {
-         this.setState({ albums: response.data });
-      });
+         .then((response) => {
+            this.setState({ albums: response.data });
+         });
    }
    
    renderAlbums() {

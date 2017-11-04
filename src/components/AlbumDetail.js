@@ -1,16 +1,15 @@
 import React from 'react';
 import { Image, Linking, Text, View } from 'react-native';
 
+import Button from './Button';
 import Card from './Card';
 import CardSection from './CardSection';
-import Button from './Button';
-
 
 const AlbumDetail = (props) => {
    const {
+      artisTextStyle,      
       headerContentStyle,
-      titleTextStyle,
-      artisTextStyle
+      titleTextStyle
    } = styles;
    
    const {
@@ -31,8 +30,8 @@ const AlbumDetail = (props) => {
             <CardSection>
                <View>
                   <Image
-                  style={{ width: 50, height: 50 }}
-                  source={{ uri: thumbnail_image }}
+                     style={{ width: 50, height: 50 }}
+                     source={{ uri: thumbnail_image }}
                   />
                </View>               
 
@@ -60,12 +59,6 @@ const AlbumDetail = (props) => {
 };
 
 const styles = {
-   titleTextStyle: {
-      color: '#EAF9FF',
-      fontSize: 20,
-      padding: 2
-   },
-
    artisTextStyle: {
       color: '#6D96B9',
       fontSize: 15,
@@ -73,9 +66,15 @@ const styles = {
    },
 
    headerContentStyle: {
-      justifyContent: 'space-around',
       flexDirection: 'column',
+      justifyContent: 'space-around',
       paddingLeft: 10
+   },
+
+   titleTextStyle: {
+      color: '#EAF9FF',
+      fontSize: 20,
+      padding: 2
    }
 };
 
