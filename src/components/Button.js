@@ -12,23 +12,21 @@ const Button = (props) => {
    );
 };
 
-const styles = {
+const styles = {   
+   buttonStyle: {
+      alignSelf: 'stretch',
+      borderRadius: 4,
+      backgroundColor: '#6D96B9',
+      width: '100%'
+   },
+
    textStyle: {
       alignSelf: 'center',
       color: '#FFF',
       fontSize: 16,
       fontWeight: '600',
-      paddingTop: 10,
-      paddingBottom: 10
-   },
-   
-   buttonStyle: {
-      alignItems: 'center',
-      alignSelf: 'stretch',
-      color: '#6D96B9',
-      flex: 1,
-      fontSize: 15,
-      padding: 2
+      paddingBottom: 10,
+      paddingTop: 10
    }
 };
 

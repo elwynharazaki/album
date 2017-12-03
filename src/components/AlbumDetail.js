@@ -20,7 +20,7 @@ const AlbumDetail = (props) => {
       url
    } = props.album;
 
-   const onButtonPressed = () => {
+   const onButtonPressed = () => { //this is equal as buttonPress={() => console.log('pressed')}
       Linking.openURL(url);
    };
 
@@ -49,7 +49,7 @@ const AlbumDetail = (props) => {
             </CardSection>
             
             <CardSection>
-               <Button buttonPressed={onButtonPressed}>
+               <Button buttonPressed={onButtonPressed}> 
                   Buy {title} Here
                </Button>
             </CardSection>
