@@ -14,7 +14,7 @@ const Header = (props) => {
 const styles = {
 	headerStyle: {
 		alignItems: 'center',
-		backgroundColor: '#0C508B',
+		backgroundColor: 'transparent',
 		elevation: 2,
 		shadowColor: '#083861',
 		shadowOpacity: 0.9
@@ -22,7 +22,7 @@ const styles = {
 
    textStyle: {
 		color: '#6D96B9',
-		fontSize: 30,
+		fontSize: 25,
 		padding: 5
    }
 };
