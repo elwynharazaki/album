@@ -9,6 +9,7 @@ const App = () => {
 		<View style={{ flex: 1, backgroundColor: '#0C508B' }}>
          <StatusBar
             barStyle='default'
+            backgroundColor='transparent'
             translucent
          />
 			<Header />
